@@ -60,6 +60,30 @@ const sidebars = {
       ],
     },
     "more-examples",
+    {
+      type: "category",
+      label: "Notes",
+      items: [
+        "notes/installation",
+        "notes/debugging",
+        "notes/logs",
+        "notes/debugging-url",
+      ],
+    },
+    "development",
+    "more-info",
+    {
+      type: "category",
+      label: "Extras",
+      items: [
+        "extras/manual-trigger",
+        "extras/outputs",
+        "extras/docker-image",
+        "extras/print-cypress-info",
+        "extras/nightly-tests",
+      ],
+    },
+    "migration-guide",
   ],
 }
 
