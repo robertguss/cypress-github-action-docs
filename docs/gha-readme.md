@@ -428,7 +428,7 @@ jobs:
 
 The recording will have tags as labels on the run.
 
-![Tags](images/tags.png)
+![Tags](/img/tags.png)
 
 You can pass multiple tags using commas like `tag: node-10,nightly,staging`.
 
@@ -544,7 +544,7 @@ jobs:
         with:
           record: true
           parallel: true
-          group: 'Actions example'
+          group: "Actions example"
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -553,7 +553,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-![Parallel run](images/parallel.png)
+![Parallel run](/img/parallel.png)
 
 **Warning ⚠️:** Cypress actions use `GITHUB_TOKEN` to get the correct branch and the number of jobs run, making it possible to re-run without the need of pushing an empty commit. If you don't want to use the `GITHUB_TOKEN` you can still run your tests without problem with the only note that Cypress Dashboard API connects parallel jobs into a single logical run using GitHub commit SHA plus workflow name. If you attempt to re-run GitHub checks, the Dashboard thinks the run has already ended. In order to truly rerun parallel jobs, push an empty commit with `git commit --allow-empty -m "re-run checks" && git push`. As another work around you can generate and cache a custom build id, read [Adding a unique build number to GitHub Actions](https://medium.com/attest-engineering/adding-a-unique-github-build-identifier-7aa2e83cadca)
 
@@ -688,7 +688,7 @@ jobs:
         with:
           start: npm start
           # quote the url to be safe against YML parsing surprises
-          wait-on: 'http://localhost:8080'
+          wait-on: "http://localhost:8080"
 ```
 
 [![wait-on example](https://github.com/cypress-io/github-action/workflows/example-wait-on/badge.svg?branch=master)](.github/workflows/example-wait-on.yml)
@@ -699,7 +699,7 @@ By default, `wait-on` will retry for 60 seconds. You can pass a custom timeout i
 - uses: cypress-io/github-action@v4
   with:
     start: npm start
-    wait-on: 'http://localhost:8080/status'
+    wait-on: "http://localhost:8080/status"
     # wait for 2 minutes for the server to respond
     wait-on-timeout: 120
 ```
@@ -715,7 +715,7 @@ You can wait for multiple URLs to respond by separating urls with a comma
     # Web server runs on port 8080
     start: npm run api, npm run web
     # wait for all services to respond
-    wait-on: 'http://localhost:3050, http://localhost:8080'
+    wait-on: "http://localhost:3050, http://localhost:8080"
 ```
 
 The action will wait for the first url to respond, then will check the second url, and so on.
@@ -726,7 +726,7 @@ You can even use your own command (usually by using `npm`, `yarn`, `npx`) to wai
 - uses: cypress-io/github-action@v4
   with:
     start: npm start
-    wait-on: 'npx wait-on --timeout 5000 http://localhost:3000'
+    wait-on: "npx wait-on --timeout 5000 http://localhost:3000"
 ```
 
 See [example-wait-on.yml](.github/workflows/example-wait-on.yml) workflow file.
@@ -763,10 +763,10 @@ jobs:
         with:
           start: npm start
           # quote the url to be safe against YML parsing surprises
-          wait-on: 'http://localhost:8080'
+          wait-on: "http://localhost:8080"
           # the entire command will automatically be prefixed with "npm"
           # and we need the second "npm" to execute "cypress run ..." command line
-          command-prefix: 'percy exec -- npx'
+          command-prefix: "percy exec -- npx"
 ```
 
 See live example [angular-pizza-creator](https://github.com/cypress-io/angular-pizza-creator).
@@ -808,8 +808,8 @@ jobs:
         with:
           record: true
           parallel: true
-          group: 'Actions example'
-          ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
+          group: "Actions example"
+          ci-build-id: "${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}"
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -836,7 +836,7 @@ jobs:
         # "sha-5d3fe...35d3-time-1620841214"
         run: echo "::set-output name=value::sha-$GITHUB_SHA-time-$(date +"%s")"
   smoke-tests:
-    needs: ['prepare']
+    needs: ["prepare"]
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v4
@@ -944,7 +944,7 @@ jobs:
           working-directory: examples/start-and-yarn-workspaces/workspace-1
           build: yarn run build
           start: yarn start
-          wait-on: 'http://localhost:5000'
+          wait-on: "http://localhost:5000"
 ```
 
 [![Yarn workspaces example](https://github.com/cypress-io/github-action/workflows/example-start-and-yarn-workspaces/badge.svg?branch=master)](.github/workflows/example-start-and-yarn-workspaces.yml)
@@ -1127,7 +1127,7 @@ You can set the environment variable using GitHub UI interface, or in the workfl
 - name: Cypress tests with debug logs
   uses: cypress-io/github-action@v4
   env:
-    DEBUG: '@cypress/github-action'
+    DEBUG: "@cypress/github-action"
 ```
 
 See the [example-debug.yml](./.github/workflows/example-debug.yml) workflow file.
@@ -1140,7 +1140,7 @@ The above `ACTIONS_STEP_DEBUG` setting enables the debug logs from the action it
 - name: Cypress tests with debug logs
   uses: cypress-io/github-action@v4
   env:
-    DEBUG: 'cypress:*'
+    DEBUG: "cypress:*"
 ```
 
 ### Debugging waiting for URL to respond
@@ -1210,7 +1210,7 @@ This GH Action sets an output `dashboardUrl` if the run was recorded on [Cypress
 
 ### Docker image
 
-If your repository does not have `package.json` or `yarn.json` (maybe it contains a static site and does not need any dependencies), you can run Cypress tests using `cypress/included:...` [Cypress Docker images](https://github.com/cypress-io/cypress-docker-images/tree/master/included). In that case you don't even need this GH Action, instead use the Docker container and write `cypress run` command like this example from [cypress-gh-action-included](https://github.com/bahmutov/cypress-gh-action-included)
+If your repository does not have `package.json` or `yarn.json` (maybe it contains a static site and does not need any dependencies), you can run Cypress tests using `cypress/included:...` [Cypress Docker images](https://github.com/cypress-io/cypress-docker-/img/tree/master/included). In that case you don't even need this GH Action, instead use the Docker container and write `cypress run` command like this example from [cypress-gh-action-included](https://github.com/bahmutov/cypress-gh-action-included)
 
 ```yml
 name: included
@@ -1219,7 +1219,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     # Docker image with Cypress pre-installed
-    # https://github.com/cypress-io/cypress-docker-images/tree/master/included
+    # https://github.com/cypress-io/cypress-docker-/img/tree/master/included
     container: cypress/included:3.8.3
     steps:
       - uses: actions/checkout@v2
@@ -1282,7 +1282,7 @@ name: example-cron
 on:
   schedule:
     # runs tests every day at 4am
-    - cron: '0 4 * * *'
+    - cron: "0 4 * * *"
 jobs:
   nightly:
     runs-on: ubuntu-20.04
