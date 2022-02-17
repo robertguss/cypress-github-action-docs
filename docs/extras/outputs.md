@@ -1,6 +1,6 @@
 # Outputs
 
-This GH Action sets an output `dashboardUrl` if the run was recorded on [Cypress Dashboard](https://on.cypress.io/dashboard-introduction), see [action.yml](action.yml). To use this output:
+This GH Action sets an output `dashboardUrl` if the run was recorded on [Cypress Dashboard](https://on.cypress.io/dashboard-introduction), see [action.yml](https://github.com/cypress-io/github-action/blob/master/action.yml). To use this output:
 
 ```yml
 - name: Cypress tests
@@ -21,6 +21,6 @@ This GH Action sets an output `dashboardUrl` if the run was recorded on [Cypress
     echo See results at ${{ steps.cypress.outputs.dashboardUrl }}
 ```
 
-[![recording example](https://github.com/cypress-io/github-action/workflows/example-recording/badge.svg?branch=master)](.github/workflows/example-recording.yml)
+[![recording example](https://github.com/cypress-io/github-action/workflows/example-recording/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-recording.yml)
 
 **Note:** every GH workflow step can have `outcome` and `conclusion` properties. See the documentation at [steps context](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#steps-context) page. In particular, the `output` value can be `success`, `failure`, `cancelled`, or `skipped` which you can use the next steps that follow.

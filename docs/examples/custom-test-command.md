@@ -13,4 +13,4 @@ steps:
       command: npm run e2e:ci
 ```
 
-See [.github/workflows/example-custom-command.yml](.github/workflows/example-custom-command.yml) file.
+See [https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-custom-command.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-custom-command.yml) file.

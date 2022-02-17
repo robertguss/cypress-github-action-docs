@@ -18,6 +18,6 @@ jobs:
           browser: firefox
 ```
 
-[![Firefox example](https://github.com/cypress-io/github-action/workflows/example-firefox/badge.svg?branch=master)](.github/workflows/example-firefox.yml)
+[![Firefox example](https://github.com/cypress-io/github-action/workflows/example-firefox/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-firefox.yml)
 
 **Note:** the magical user id `1001` works because it matches permissions settings on the home folder, see issue [#104](https://github.com/cypress-io/github-action/issues/104)

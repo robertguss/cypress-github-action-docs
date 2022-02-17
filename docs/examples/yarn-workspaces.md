@@ -1,6 +1,6 @@
 # Yarn workspaces
 
-This action should discover Yarn workspace correctly. For example, see folder [examples/start-and-yarn-workspaces](examples/start-and-yarn-workspaces) and workflow file [example-start-and-yarn-workspaces.yml](.github/workflows/example-start-and-yarn-workspaces.yml)
+This action should discover Yarn workspace correctly. For example, see folder [examples/start-and-yarn-workspaces](https://github.com/cypress-io/github-action/tree/master/examples/start-and-yarn-workspaces) and workflow file [example-start-and-yarn-workspaces.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-start-and-yarn-workspaces.yml)
 
 ```yaml
 name: example-start-and-yarn-workspaces
@@ -21,4 +21,4 @@ jobs:
           wait-on: "http://localhost:5000"
 ```
 
-[![Yarn workspaces example](https://github.com/cypress-io/github-action/workflows/example-start-and-yarn-workspaces/badge.svg?branch=master)](.github/workflows/example-start-and-yarn-workspaces.yml)
+[![Yarn workspaces example](https://github.com/cypress-io/github-action/workflows/example-start-and-yarn-workspaces/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-start-and-yarn-workspaces.yml)

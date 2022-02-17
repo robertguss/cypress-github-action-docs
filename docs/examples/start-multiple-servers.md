@@ -26,4 +26,4 @@ with:
     npm run web
 ```
 
-[![start example](https://github.com/cypress-io/github-action/workflows/example-start/badge.svg?branch=master)](.github/workflows/example-start.yml)
+[![start example](https://github.com/cypress-io/github-action/workflows/example-start/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-start.yml)

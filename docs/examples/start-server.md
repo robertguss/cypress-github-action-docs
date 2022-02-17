@@ -37,6 +37,6 @@ jobs:
           start-windows: npm run start:windows:server
 ```
 
-[![start example](https://github.com/cypress-io/github-action/workflows/example-start/badge.svg?branch=master)](.github/workflows/example-start.yml)
+[![start example](https://github.com/cypress-io/github-action/workflows/example-start/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-start.yml)
 
 **Note:** GitHub cleans up the running server processes automatically. This action does not stop them.

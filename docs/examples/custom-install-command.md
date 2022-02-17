@@ -8,4 +8,4 @@ If you want to overwrite the install command
     install-command: yarn --frozen-lockfile --silent
 ```
 
-See [example-install-command.yml](.github/workflows/example-install-command.yml) workflow file.
+See [example-install-command.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-install-command.yml) workflow file.

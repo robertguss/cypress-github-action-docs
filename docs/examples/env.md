@@ -39,4 +39,4 @@ jobs:
 
 For more examples, see the workflow example below.
 
-[![Env example](https://github.com/cypress-io/github-action/workflows/example-env/badge.svg?branch=master)](.github/workflows/example-env.yml)
+[![Env example](https://github.com/cypress-io/github-action/workflows/example-env/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-env.yml)

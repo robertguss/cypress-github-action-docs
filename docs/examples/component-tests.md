@@ -15,4 +15,4 @@ You can run [Cypress component tests](https://on.cypress.io/component-testing) i
     component: true
 ```
 
-See the example project [component-test](/examples/v10/component-tests/) and the [example-component-test-workflow](.github/workflows/example-component-test.yml) for more details.
+See [example-component-test-workflow](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-component-test.yml) for more details.

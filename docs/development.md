@@ -9,7 +9,7 @@
 ## Testing against another repo
 
 1. Create a new local branch for any development, for example `git checkout -b featureA`
-1. Update the source code in [index.js](index.js)
+1. Update the source code in [index.js](https://github.com/cypress-io/github-action/blob/master/index.js)
 1. Build `dist` file(s) using `npm run build`
 1. Commit any changed files, note the SHA of the commit
 1. Push the local branch to GitHub
@@ -49,7 +49,7 @@ fix: upgrade dependency X
 BREAKING CHANGE: requires Node 8 to run
 ```
 
-3. New versions of this action will be released automatically by the CI, see [.github/workflows/main.yml](.github/workflows/main.yml). This will create a new [GitHub release](https://github.com/cypress-io/github-action/releases) and will update the current `/v1` branch. Thus every user that use `- uses: cypress-io/github-action@v2` will be using the new version automatically.
+3. New versions of this action will be released automatically by the CI, see [https://github.com/cypress-io/github-action/blob/master/.github/workflows/main.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/main.yml). This will create a new [GitHub release](https://github.com/cypress-io/github-action/releases) and will update the current `/v1` branch. Thus every user that use `- uses: cypress-io/github-action@v2` will be using the new version automatically.
 
 ## Updating the latest version in GitHub Marketplace
 

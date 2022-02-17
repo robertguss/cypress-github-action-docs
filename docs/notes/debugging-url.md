@@ -1,6 +1,6 @@
 # Debugging waiting for URL to respond
 
-If you have a problem with `wait-on` not working, you can check the [src/ping.js](src/ping.js) logic from the local machine.
+If you have a problem with `wait-on` not working, you can check the [src/ping.js](https://github.com/cypress-io/github-action/blob/master/src/ping.js) logic from the local machine.
 
 - clone this repository to the local machine
 - install dependencies with `npm install`

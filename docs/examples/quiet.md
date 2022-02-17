@@ -14,10 +14,10 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests with `quiet` parameter
       - name: Cypress run
-        uses: ./
+        uses:
         with:
           working-directory: examples/quiet
           quiet: true
 ```
 
-[![example-quiet](https://github.com/cypress-io/github-action/workflows/example-quiet/badge.svg?branch=master)](.github/workflows/example-quiet.yml)
+[![example-quiet](https://github.com/cypress-io/github-action/workflows/example-quiet/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-quiet.yml)

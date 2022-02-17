@@ -16,6 +16,6 @@ If the project has many dependencies, but you want to install just Cypress you c
     install: false
 ```
 
-See [.github/workflows/example-install-only.yml](.github/workflows/example-install-only.yml) file.
+See [https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-install-only.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-install-only.yml) file.
 
-[![Install only Cypress example](https://github.com/cypress-io/github-action/workflows/example-install-only/badge.svg?branch=master)](.github/workflows/example-install-only.yml)
+[![Install only Cypress example](https://github.com/cypress-io/github-action/workflows/example-install-only/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-install-only.yml)

@@ -18,6 +18,6 @@ jobs:
         uses: cypress-io/github-action@v4
 ```
 
-See the [example-cron.yml](./.github/workflows/example-cron.yml) workflow.
+See the [example-cron.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-cron.yml) workflow.
 
-[![cron example](https://github.com/cypress-io/github-action/workflows/example-cron/badge.svg?branch=master)](.github/workflows/example-cron.yml)
+[![cron example](https://github.com/cypress-io/github-action/workflows/example-cron/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-cron.yml)

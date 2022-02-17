@@ -19,4 +19,4 @@ jobs:
           config: pageLoadTimeout=100000,baseUrl=http://localhost:3000
 ```
 
-[![example-config](https://github.com/cypress-io/github-action/workflows/example-config/badge.svg?branch=master)](.github/workflows/example-config.yml)
+[![example-config](https://github.com/cypress-io/github-action/workflows/example-config/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-config.yml)

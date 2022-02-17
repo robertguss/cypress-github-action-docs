@@ -19,7 +19,7 @@ jobs:
           wait-on: "http://localhost:8080"
 ```
 
-[![wait-on example](https://github.com/cypress-io/github-action/workflows/example-wait-on/badge.svg?branch=master)](.github/workflows/example-wait-on.yml)
+[![wait-on example](https://github.com/cypress-io/github-action/workflows/example-wait-on/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-wait-on.yml)
 
 By default, `wait-on` will retry for 60 seconds. You can pass a custom timeout in seconds using `wait-on-timeout`.
 
@@ -32,7 +32,7 @@ By default, `wait-on` will retry for 60 seconds. You can pass a custom timeout i
     wait-on-timeout: 120
 ```
 
-See also [![Webpack Dev Server example](https://github.com/cypress-io/github-action/workflows/example-webpack/badge.svg?branch=master)](.github/workflows/example-webpack.yml)
+See also [![Webpack Dev Server example](https://github.com/cypress-io/github-action/workflows/example-webpack/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-webpack.yml)
 
 You can wait for multiple URLs to respond by separating urls with a comma
 
@@ -57,6 +57,6 @@ You can even use your own command (usually by using `npm`, `yarn`, `npx`) to wai
     wait-on: "npx wait-on --timeout 5000 http://localhost:3000"
 ```
 
-See [example-wait-on.yml](.github/workflows/example-wait-on.yml) workflow file.
+See [example-wait-on.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-wait-on.yml) workflow file.
 
 If this action times out waiting for the server to respond, please see [Debugging](#debugging) section in this README file.

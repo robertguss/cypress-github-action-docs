@@ -15,4 +15,4 @@ You can set the environment variable using GitHub UI interface, or in the workfl
     DEBUG: "@cypress/github-action"
 ```
 
-See the [example-debug.yml](./.github/workflows/example-debug.yml) workflow file.
+See the [example-debug.yml](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-debug.yml) workflow file.

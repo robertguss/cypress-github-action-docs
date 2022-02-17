@@ -17,4 +17,4 @@ jobs:
           browser: chrome
 ```
 
-[![Chrome example](https://github.com/cypress-io/github-action/workflows/example-chrome/badge.svg?branch=master)](.github/workflows/example-chrome.yml)
+[![Chrome example](https://github.com/cypress-io/github-action/workflows/example-chrome/badge.svg?branch=master)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-chrome.yml)
