@@ -59,6 +59,7 @@ const sidebars = {
         "examples/timeouts",
       ],
     },
+    "more-examples",
   ],
 }
 
