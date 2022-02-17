@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
   organizationName: "cypress-io", // Usually your GitHub org/user name.
   projectName: "github-action", // Usually your repo name.
 
